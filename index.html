@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUZJEY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body class="body">
+    <div class="content">
+        <nav class="nav">
+            <div class="tittle-container">
+                <h1 class="tittle">HUZJEY</h1>
+            </div>
+            <div class="moon-container mooncontainer">
+                    <img src="moon.png" alt="" class="moon"> 
+                </div>
+                <div class="menu-container">
+                    <img src="menu.png" alt="" class="menu">
+                </div>
+                    <div class="container-links"></div>
+                    <ul class="nav-links navlinks">
+                        <li class="list"><a href="#" class="hypers">Home</a></li>
+                        <li class="list"><a href="#" class="hypers">BLog</a></li>
+                        <li class="list"><a href="#" class="hypers">Contact</a></li>
+                        <li class="list"><a href="#" class="hypers">About</a></li>
+                    </ul>
+            </nav>
+            <section class="section1">
+                <div class="container">
+                    
+                    <div class="content-container">
+                        <h1 class="head">i am software developer</h1>
+                        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, aspernatur?</p>
+                        <a href="#" class="links">hire me</a>
+                    </div>
+                    <div class="img-container">
+                        <img src="character.png" alt="" class="character-img">
+                    </div>
+                </div>
+            </section>
+            </div>
+            <script>
+                darktheme = () =>{
+                    const mooncontainer = document.querySelector('.moon-container');
+                    const body = document.querySelector('.body');
+                    const moon = document.querySelector('.moon');
+                    const menu = document.querySelector(".menu-container");
+                    
+            mooncontainer.addEventListener("click",() =>{
+               body.classList.toggle("magic") 
+               moon.classList.toggle("hey")
+               menu.classList.toggle("bg")
+            });
+        };
+        darktheme();
+        function toogle(){
+            const toogle = document.querySelector(".menu-container");
+            const navlinks = document.querySelector(".navlinks");
+
+            toogle.addEventListener("click",() =>{
+             navlinks.classList.toggle("toogle");
+            });
+        };
+        toogle();
+    </script>
+    
+</body>
+</html>

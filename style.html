@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.magic{
+background-color:red;
+}
+
+</style>
+
+<body>
+
+<h1>The Document Object</h1>
+<h2>The addEventListener() Method</h2>
+
+<p id="para">Click anywhere in the document to display "Hello World!".</p>
+
+<button id="hey">hey</button>
+
+<script>
+const hey = document.getElementById("hey")
+const p =document.getElementById("para")
+hey.addEventListener("click", myFunction);
+
+function myFunction() {
+	p.classList.toggle("magic")
+}
+</script>
+
+</body>
+</html>
